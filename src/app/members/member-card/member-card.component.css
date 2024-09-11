@@ -1,0 +1,76 @@
+/* Card hover effect for image scaling */
+.card:hover img {
+    transform: scale(1.1, 1.1);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  /* Initial state of the image */
+  .card img {
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  /* Wrapper to handle overflow for better scaling */
+  .card-img-wrapper {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the member action icons */
+  .member-icons {
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Animate icons to slide up and fade in on hover */
+  .card-img-wrapper:hover .member-icons {
+    bottom: 10px;
+    opacity: 1;
+  }
+  
+  /* Icon button styling */
+  .member-icons .btn {
+    padding: 8px 12px;
+  }
+  
+  /* Card body styling for better text alignment */
+  .card-body {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Adjust the card title styling */
+  .card-title {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  /* Text styling for the member's city */
+  .card-text {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Add some hover effect to the card itself */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.4s ease-in-out, transform 0.3s ease;
+  }
+  
+  /* Add a subtle shadow and slight scale on card hover */
+  .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  

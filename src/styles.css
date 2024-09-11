@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+/* General tab panel styling */
+.tab-panel {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the tab headers */
+  .member-tabset .nav-tabs > li {
+    margin-right: 10px;
+  }
+  
+  .member-tabset .nav-tabs > li > a {
+    padding: 10px 20px;
+    border-radius: 4px 4px 0 0;
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for tabs */
+  .member-tabset .nav-tabs > li:hover > a {
+    background-color: #e9ecef;
+    color: #0056b3;
+  }
+  
+  /* Active tab styling */
+  .member-tabset .nav-tabs > li.active > a {
+    background-color: #E95420;
+    color: #fff;
+    border-bottom: none;
+    position: relative;
+  }
+  
+  /* Hover effect for active tabs */
+  .member-tabset .nav-tabs > li.active > a:hover {
+    background-color: #d64a1b;
+  }
+  
+  /* Tab content styling */
+  .member-tabset .tab-content {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Active tab bottom border */
+  .member-tabset .nav-tabs > li.active {
+    border-bottom: 4px solid #E95420;
+  }
+  
+  /* Add smooth transitions between tab content */
+  .member-tabset .tab-pane {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .member-tabset .tab-pane.active {
+    opacity: 1;
+  }
+  
